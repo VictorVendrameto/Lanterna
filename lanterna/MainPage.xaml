@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lanterna.MainPage">
+
+    <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*" BackgroundColor="#191919">
+        <Label Text="LANTERNA" TextColor="Aqua" FontSize="50" Grid.ColumnSpan="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+
+        <ImageButton x:Name="btnLanternaOnOff" Clicked="btnLanternaOnOff_Clicked"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Transparent"/>
+
+
+        <Label Text="SITUAÇÃO DA BATERIA" FontSize="35" VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" TextColor="White" HorizontalTextAlignment="Center"/>
+
+
+
+        <Label Text="Carga Restante" FontSize="25" Grid.Row="3" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Aqua" BackgroundColor="#191919"/>
+        <Label Text="Status da bateria" FontSize="25" Grid.Row="4" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Aqua" BackgroundColor="#191919"/>
+        <Label Text="Fonte de Energia" FontSize="25" Grid.Row="5" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Aqua" BackgroundColor="#191919"/>
+
+        <Label x:Name="lbl_carga" FontSize="22" Grid.Row="3" Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Red" BackgroundColor="#191919"/>
+        <Label x:Name="lbl_status" FontSize="22" Grid.Row="4" Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="LightPink" BackgroundColor="#191919"/>
+        <Label x:Name="lbl_fonte" FontSize="22" Grid.Row="5" Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="LightPink" BackgroundColor="#191919"/>
+
+        <Label x:Name="lbl_bateria_fraca" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+    </Grid>
+    
+</ContentPage>
